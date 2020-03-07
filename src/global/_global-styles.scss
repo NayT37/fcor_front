@@ -1,0 +1,29 @@
+@import "./global-vars";
+
+body {
+  min-width: 320px;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.component--container {
+  width: 100%;
+}
+
+// [ Responsive ]
+@media (min-width: $break-xs) {
+  // 480px
+  .container {
+    padding: 0 px-to-rem(16);
+  }
+}
+
+@media (min-width: $break-ms) {
+  // 768px
+  .container {
+    padding: 0 px-to-rem(24);
+  }
+}

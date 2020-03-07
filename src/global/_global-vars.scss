@@ -1,0 +1,25 @@
+/* 
+  Global vars to import
+  
+  INDEX
+//  + Vars
+//    + Breakpoints
+//  + Functions
+*/
+
+//  + Vars
+$base-size: 16;
+
+//    + Breakpoints
+$break-xxs: 320px;
+$break-xs: 480px;
+$break-s: 568px;
+$break-ms: 768px;
+$break-md: 1024px;
+$break-l: 1200px;
+$break-xl: 1400px;
+
+/// Function to convert px value into rem
+@function px-to-rem($target, $context: $base-size) {
+  @return ($target / $context) * 1em;
+}

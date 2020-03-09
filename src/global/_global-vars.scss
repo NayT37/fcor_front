@@ -10,6 +10,8 @@
 //  + Vars
 $base-size: 16;
 
+$table-border: 1px solid black;
+
 //    + Breakpoints
 $break-xxs: 320px;
 $break-xs: 480px;
@@ -21,5 +23,5 @@ $break-xl: 1400px;
 
 /// Function to convert px value into rem
 @function px-to-rem($target, $context: $base-size) {
-  @return ($target / $context) * 1em;
+  @return ($target / $context) * 1rem;
 }

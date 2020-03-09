@@ -1,0 +1,20 @@
+@import "../../global/global-vars";
+
+.t-box__title {
+  margin-bottom: px-to-rem(20);
+}
+
+.t-box__content {
+  height: 15rem;
+  padding: px-to-rem(15);
+  border-radius: 5px;
+  border: $table-border;
+  overflow-y: scroll;
+}
+
+.t-box__content__list__item {
+  padding: px-to-rem(7) 0;
+  &.active {
+    background-color: lightblue;
+  }
+}
